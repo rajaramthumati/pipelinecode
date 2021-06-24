@@ -1,6 +1,8 @@
 pipeline {
     agent { label 'LinuxAgent1' }
-    parameters { string(name: 'branch', defaultValue: 'main', description: ''),booleanParam(name: 'DEBUG_BUILD', defaultValue: true, description: '') }
+    parameters { string(name: 'branch', defaultValue: 'main', description: '')
+                booleanParam(name: 'DEBUG_BUILD', defaultValue: true, description: '')
+               }
 
     stages {
         stage('Git') {
