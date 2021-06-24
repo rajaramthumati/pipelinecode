@@ -1,5 +1,6 @@
 pipeline {
     agent { label 'LinuxAgent1' }
+    parameters { string(name: 'branch', defaultValue: 'main', description: '') }
 
     stages {
         stage('Git') {
