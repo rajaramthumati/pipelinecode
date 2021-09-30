@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'LinuxAgent1' }
+    agent { label 'linux1' }
     parameters { string(name: 'branch', defaultValue: 'main', description: '')
                 booleanParam(name: 'DEBUG_BUILD', defaultValue: true, description: '')
                }
